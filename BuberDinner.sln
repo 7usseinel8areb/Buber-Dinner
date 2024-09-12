@@ -14,6 +14,23 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Contracts", "BuberDinner.Contracts\BuberDinner.Contracts.csproj", "{F838D03D-956D-44F9-B3D6-737C30CCC11F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CFE25D78-9BA8-4772-8162-81B86E056D39}"
+	ProjectSection(SolutionItems) = preProject
+		Requests\Authentication\Login.http = Requests\Authentication\Login.http
+		Requests\Authentication\Register.http = Requests\Authentication\Register.http
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{98B7598D-02BE-49DC-9352-111DB3FE46EF}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\Api.md = Docs\Api.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requests", "Requests", "{B7E2F6F6-43DC-4070-821E-5CED42C36474}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{15E295F4-2BC9-4860-BECF-9FB2F963CAF6}"
+	ProjectSection(SolutionItems) = preProject
+		Requests\Authentication\Login.http = Requests\Authentication\Login.http
+		Requests\Authentication\Register.http = Requests\Authentication\Register.http
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +68,9 @@ Global
 		{FB447F3F-A426-4CFD-A23F-559D5F003D81} = {CFE25D78-9BA8-4772-8162-81B86E056D39}
 		{F901E674-4866-4EF2-800E-FD2C572E5BA0} = {CFE25D78-9BA8-4772-8162-81B86E056D39}
 		{F838D03D-956D-44F9-B3D6-737C30CCC11F} = {CFE25D78-9BA8-4772-8162-81B86E056D39}
+		{98B7598D-02BE-49DC-9352-111DB3FE46EF} = {CFE25D78-9BA8-4772-8162-81B86E056D39}
+		{B7E2F6F6-43DC-4070-821E-5CED42C36474} = {CFE25D78-9BA8-4772-8162-81B86E056D39}
+		{15E295F4-2BC9-4860-BECF-9FB2F963CAF6} = {B7E2F6F6-43DC-4070-821E-5CED42C36474}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B37287B4-EE53-4839-B8C0-4C4E66A6899A}
