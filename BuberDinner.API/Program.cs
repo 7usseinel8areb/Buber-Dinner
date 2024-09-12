@@ -12,7 +12,7 @@ namespace BuberDinner.API
             {
                 //Injection
                 builder.Services.AddApplication()
-                                .AddInfrastructure();
+                                .AddInfrastructure(builder.Configuration);
                 // Add services to the container.
                 builder.Services.AddControllers();
 

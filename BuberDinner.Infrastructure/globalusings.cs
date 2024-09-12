@@ -1,0 +1,10 @@
+﻿global using BuberDinner.Application.Common.Interfaces.Authentication;
+global using BuberDinner.Application.Common.Interfaces.Services;
+global using BuberDinner.Infrastructure.Authentication;
+global using BuberDinner.Infrastructure.Services;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.IdentityModel.Tokens;
+global using System.IdentityModel.Tokens.Jwt;
+global using System.Security.Claims;
+global using System.Text;
