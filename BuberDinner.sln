@@ -14,10 +14,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuberDinner.Contracts", "BuberDinner.Contracts\BuberDinner.Contracts.csproj", "{F838D03D-956D-44F9-B3D6-737C30CCC11F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CFE25D78-9BA8-4772-8162-81B86E056D39}"
-	ProjectSection(SolutionItems) = preProject
-		Requests\Authentication\Login.http = Requests\Authentication\Login.http
-		Requests\Authentication\Register.http = Requests\Authentication\Register.http
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{98B7598D-02BE-49DC-9352-111DB3FE46EF}"
 	ProjectSection(SolutionItems) = preProject
