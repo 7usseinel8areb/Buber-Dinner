@@ -1,9 +1,3 @@
-
-using BuberDinner.API.Filters;
-using BuberDinner.API.Middleware;
-using BuberDinner.Application;
-using BuberDinner.Infrastructure;
-
 namespace BuberDinner.API
 {
     public class Program
