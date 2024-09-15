@@ -1,5 +1,6 @@
 ﻿global using BuberDinner.Application.Common.Interfaces.Authentication;
 global using BuberDinner.Application.Common.Interfaces.Services;
+global using BuberDinner.Domain.Entities;
 global using BuberDinner.Infrastructure.Authentication;
 global using BuberDinner.Infrastructure.Services;
 global using Microsoft.Extensions.Configuration;
