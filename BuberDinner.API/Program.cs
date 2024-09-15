@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Diagnostics;
+
 namespace BuberDinner.API
 {
     public class Program
@@ -13,7 +15,7 @@ namespace BuberDinner.API
                 builder.Services.AddControllers(options =>
                 {
                     //Let this filter work with all the controllers
-                    options.Filters.Add<ErrorHandlingFilterAttribute>();
+                    //options.Filters.Add<ErrorHandlingFilterAttribute>();
                 });
 
                 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -33,6 +35,19 @@ namespace BuberDinner.API
                     app.UseSwaggerUI();
                 }
                 //app.UseMiddleware<ErrorHandlingMiddleware>();
+
+                #region Using Error Controller
+                //Defining the controller that handles the error
+                //app.UseExceptionHandler("/error");
+                //Or with using minimal API
+                app.Map("/error",(HttpContext ctx) =>
+                {
+                    Exception? exception = ctx.Features.Get<IExceptionHandlerFeature>()?.Error;
+
+                    return Results.Problem();
+                });
+                #endregion
+
                 app.UseHttpsRedirection();
 
                 /*app.UseAuthorization();*/
