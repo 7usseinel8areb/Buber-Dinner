@@ -41,7 +41,7 @@ namespace BuberDinner.Application.Services.Authentication
             //Check if user already exists
             if(_userRepository.GetUserByEmail(email) is not null)
             {
-                throw new Exception("User already exists");
+                throw new DuplicateEmailException();
             }
 
             //Create a user (generate unique Id)
