@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Diagnostics;
-
 namespace BuberDinner.API
 {
     public class Program
@@ -34,18 +32,20 @@ namespace BuberDinner.API
                     app.UseSwagger();
                     app.UseSwaggerUI();
                 }
+                // Error handling middleware
                 //app.UseMiddleware<ErrorHandlingMiddleware>();
 
                 #region Using Error Controller
                 //Defining the controller that handles the error
-                //app.UseExceptionHandler("/error");
+                app.UseExceptionHandler("/error");
                 //Or with using minimal API
-                app.Map("/error",(HttpContext ctx) =>
+                //If you want to use this remove the comments
+                /*app.Map("/error", (HttpContext ctx) =>
                 {
                     Exception? exception = ctx.Features.Get<IExceptionHandlerFeature>()?.Error;
 
-                    return Results.Problem();
-                });
+                    return Results.Problem(statusCode:400);
+                });*/
                 #endregion
 
                 app.UseHttpsRedirection();
